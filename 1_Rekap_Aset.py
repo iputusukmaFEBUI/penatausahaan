@@ -2,9 +2,7 @@ import streamlit as st
 from streamlit_gsheets import GSheetsConnection
 #from streamlit_dynamic_filters import DynamicFilters
 
-
 st.set_page_config(
-
     layout="wide"
 )
 
