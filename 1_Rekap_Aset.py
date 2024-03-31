@@ -7,7 +7,7 @@ st.set_page_config(
 )
 
 st.title("Daftar Aset Kelolaan LMAN")
-#st.sidebar.success("pilih tab")
+st.sidebar.success("pilih tab")
 
 url = "https://docs.google.com/spreadsheets/d/1br1v4cUjKQ7KCFfHaQfWIix-vw4gtm5-wsoRDAZ9dKQ/edit?usp=sharing"
 
