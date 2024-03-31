@@ -25,4 +25,3 @@ dynamic_filters.display_filters()
 dynamic_filters.display_df()
 #st.dataframe(data)
 
-git+https://github.com/streamlit/gsheets-connection
