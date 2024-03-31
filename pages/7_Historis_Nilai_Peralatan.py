@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_gsheets import GSheetsConnection
-from streamlit_dynamic_filters import DynamicFilters
+#from streamlit_dynamic_filters import DynamicFilters
 
 st.set_page_config(
     layout="wide"
@@ -18,8 +18,8 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 #st.write(st.secrets['connections'])
 data = conn.read(spreadsheet=url,worksheet="209309230")
 
-dynamic_filters = DynamicFilters(df=data, filters=['Nama Aset'])
+#dynamic_filters = DynamicFilters(df=data, filters=['Nama Aset'])
 #with st.sidebar:
-dynamic_filters.display_filters()
-dynamic_filters.display_df()
-#st.dataframe(data)
+#dynamic_filters.display_filters()
+#dynamic_filters.display_df()
+st.dataframe(data)
