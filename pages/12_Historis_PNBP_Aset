@@ -1,1 +1,18 @@
+import streamlit as st
+from streamlit_gsheets import GSheetsConnection
+st.set_page_config(
 
+    layout="wide"
+)
+st.title("Daftar Aset Kelolaan LMAN")
+#st.sidebar.success("pilih tab")
+
+url = "https://docs.google.com/spreadsheets/d/1br1v4cUjKQ7KCFfHaQfWIix-vw4gtm5-wsoRDAZ9dKQ/edit?usp=sharing"
+
+conn = st.connection("gsheets", type=GSheetsConnection)
+
+#st.write(st.secrets['connections'])
+data = conn.read(spreadsheet=url, worksheet="1468705168")
+
+
+st.dataframe(data)
