@@ -1,4 +1,4 @@
-streamlit==1.22
+#streamlit==1.22
 git+https://github.com/streamlit/gsheets-connection
 #git+https://github.com/arsentievalex/streamlit-dynamic-filters
 numpy==1.26.4
