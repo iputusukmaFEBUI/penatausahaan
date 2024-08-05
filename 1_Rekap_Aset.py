@@ -19,7 +19,7 @@ data = conn.read(spreadsheet=url, worksheet="1468705168")
 
 def validate():
     if '1' not in st.session_state.multiselect:
-        st.session_state.multiselect = ['FY 202']
+        st.session_state.multiselect = ['FY 2022']
 
 reportingperiod = st.multiselect(
     "Select the time to maturity:",
