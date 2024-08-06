@@ -82,7 +82,7 @@ fig_plot = px.scatter(
     df_top_values_bar,
     x="Nama Aset",
     y="Nilai Aset",
-    size="Nilai Aset"
+    size="Nilai Aset",
     color="Kategori",
     color_continuous_scale="reds",
 )
