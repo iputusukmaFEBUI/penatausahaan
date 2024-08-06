@@ -52,13 +52,16 @@ total_spending = int(df_spend["Spend"].sum())
 left_column, middle_column, right_column=st.columns(3)
 with left_column:
     annotated_text(":office:",("Total Gross Portfolio","","#afa"))
-    st.subheader(f"Rp{total_porto:,}")
+    st.subheader(total_porto)
+    #st.subheader(f"Rp{total_porto:,}")
 with middle_column:
     annotated_text(":chart_with_upwards_trend:",("Total PNBP","","#afa"))
-    st.subheader(f"Rp{total_PNBP:,}")
+    st.subheader(total_PNBP)
+    #st.subheader(f"Rp{total_PNBP:,}")
 with right_column:
     annotated_text(":building_construction:",("Total Spending (CAPEX dan OPEX)","","#afa"))
-    st.subheader(f"Rp{total_spending:,}")
+    st.subheader(total_spending)
+    #st.subheader(f"Rp{total_spending:,}")
 
 st.markdown("---")
 
