@@ -42,14 +42,14 @@ total_porto= int(df["Nilai Aset"].sum())
 total_PNBP = int(df["PNBP"].sum())
 total_spending = int(df_spend["Spend"].sum())
 
-left_column, middle_column, right_column=st.columns(3)
-with left_column:
-    annotated_text(":office:",("Total Gross Portfolio","","#afa"))
+col = st.columns((4, 4, 4), gap='small')
+with col[0]:
+    st.markdown(**":office: Total Gross Portfolio"**)
     st.subheader(f"Rp{total_porto:,}")
-with middle_column:
+with col[1]:
     annotated_text(":chart_with_upwards_trend:",("Total PNBP","","#afa"))
     st.subheader(f"Rp{total_PNBP:,}")
-with right_column:
+with col21]:
     annotated_text(":building_construction:",("Total Spending (CAPEX dan OPEX)","","#afa"))
     st.subheader(f"Rp{total_spending:,}")
 
