@@ -22,7 +22,7 @@ url = "https://docs.google.com/spreadsheets/d/1br1v4cUjKQ7KCFfHaQfWIix-vw4gtm5-w
 
 conn = st.connection("gsheets", type=GSheetsConnection)
 
-df = conn.read(spreadsheet=url, worksheet="Menurut Kategori")
+df = conn.read(spreadsheet=url, worksheet="1480371802")
 
 st.dataframe(df)
 
