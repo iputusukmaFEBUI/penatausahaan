@@ -3,3 +3,5 @@ git+https://github.com/streamlit/gsheets-connection
 #git+https://github.com/arsentievalex/streamlit-dynamic-filters
 numpy==1.26.4
 st-annotated-text
+pandas
+streamlit_pandas
