@@ -47,10 +47,10 @@ with col[0]:
     st.markdown(**":office: Total Gross Portfolio"**)
     st.subheader(f"Rp{total_porto:,}")
 with col[1]:
-    annotated_text(":chart_with_upwards_trend:",("Total PNBP","","#afa"))
+    st.markdown(**":chart_with_upwards_trend: Total PNBP"**)
     st.subheader(f"Rp{total_PNBP:,}")
-with col21]:
-    annotated_text(":building_construction:",("Total Spending (CAPEX dan OPEX)","","#afa"))
+with col[2]:
+    st.markdown(**":building_construction: Total PNBP"**)
     st.subheader(f"Rp{total_spending:,}")
 
 st.markdown("---")
