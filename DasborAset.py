@@ -44,7 +44,7 @@ total_spending = int(df_spend["Spend"].sum())
 
 col = st.columns((4, 4, 4), gap='small')
 with col[0]:
-    st.markdown(**":office: Total Gross Portfolio"**)
+    st.markdown('**:office: Total Gross Portfolio**')
     st.subheader(f"Rp{total_porto:,}")
 with col[1]:
     st.markdown(**":chart_with_upwards_trend: Total PNBP"**)
