@@ -78,6 +78,13 @@ fig_top_values_bar.update_layout(
     xaxis=(dict(showgrid=False))
 )
 
+fig_plot = px.scatter(
+    df_top_values_bar,
+    x="Nama Aset",
+    y="Nilai Aset",
+    color="Nilai Aset",
+    color_continuous_scale="reds",
+)
 
 
 df_top_performers_bar = df_top_performers_view.reset_index(drop=True)
@@ -121,7 +128,7 @@ fig_top_spenders_bar.update_layout(
 
 col = st.columns((4, 4, 4), gap='small')
 with col[0]:
-    st.plotly_chart(fig_top_values_bar)
+    st.plotly_chart(fig_top_values_bar, theme="streamlit", use_container_width=True)
 with col[1]:
     st.plotly_chart(fig_top_performers_bar)
 with col[2]:
