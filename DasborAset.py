@@ -30,7 +30,6 @@ st.markdown("##")
 # TOP METRICS
 total_porto= df['Nilai Aset'].sum()
 total_PNBP = df["PNBP"].sum()
-total_spending = df_spend["Spend"].sum()
 
 
 st.write(total_porto)
