@@ -47,7 +47,7 @@ with col[0]:
     st.markdown('**:office: Total Gross Portfolio**')
     st.subheader(f"Rp{total_porto:,}")
 with col[1]:
-    st.markdown('**chart_with_upwards_trend: Total PNBP**')
+    st.markdown('**:chart_with_upwards_trend: Total PNBP**')
     st.subheader(f"Rp{total_PNBP:,}")
 with col[2]:
     st.markdown('**:building_construction: Total Spending**')
@@ -132,7 +132,7 @@ st.markdown("---")
 
 col = st.columns((4, 4, 4), gap='small')
 with col[0]:
-    annotated_text(("Daftar lengkap diurutkan menurut nilai aset (Z-A)","","#fea"))
+    st.markdown('**:office: Tabel Gross Portfolio per AsetP**')
     st.dataframe(df_top_values_view,
                  column_order=("Nama Aset","Nilai Aset"),
                  hide_index=True,
@@ -141,7 +141,7 @@ with col[0]:
 
 
 with col[1]:
-    annotated_text(("Daftar lengkap diurutkan menurut PNBP (Z-A)","","#fea"))
+    st.markdown('**:chart_with_upwards_trend: Tabel PNBP per AsetP**')
     st.dataframe(df_top_performers_view,
                  column_order=("Nama Aset","PNBP"),
                  hide_index=True,
@@ -149,7 +149,7 @@ with col[1]:
                  )
 
 with col[2]:
-    annotated_text(("Daftar lengkap diurutkan menurut jumlah spending (Z-A)","","#fea"))
+    st.markdown('**:building_construction: Tabel Spending per AsetP**')
     st.dataframe(df_top_spenders_view,
                  column_order=("Nama Aset","Spend"),
                  hide_index=True,
