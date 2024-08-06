@@ -45,9 +45,9 @@ st.markdown("Nilai gross portfolio merupakan nilai aset per 30 Juni 2024 sebelum
 st.markdown("##")
 
 # TOP METRICS
-total_porto= int(df["Nilai Aset"].sum())
-total_PNBP = int(df["PNBP"].sum())
-total_spending = int(df_spend["Spend"].sum())
+total_porto= df["Nilai Aset"].sum()
+total_PNBP = df["PNBP"].sum()
+total_spending = df_spend["Spend"].sum()
 
 left_column, middle_column, right_column=st.columns(3)
 with left_column:
