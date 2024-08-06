@@ -27,6 +27,7 @@ url = "https://docs.google.com/spreadsheets/d/1br1v4cUjKQ7KCFfHaQfWIix-vw4gtm5-w
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 df2 = conn.read(spreadsheet=url, worksheet="1928701477")
+df2["Gross Income Multiplier"] = df2["Gross Income Multiplier"].astype(float)
 
 # TOP METRICS
 top_revenue= int(df2["Total PNBP"].max())
@@ -47,7 +48,7 @@ with middle_column:
     annotated_text((loc_top_average.iloc[0]['Nama Aset'],"","#afa"))
 with right_column:
     st.markdown(":heavy_check_mark: Gross Income Multiplier Tertinggi")
-    st.subheader(f"{format(float(top_gim)):,.4f} x")
+    st.subheader(f"{top_gim):,.4f} x")
     annotated_text((loc_top_gim.iloc[0]['Nama Aset'],"","#afa"))
 
 st.markdown("---")
