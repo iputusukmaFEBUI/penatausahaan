@@ -4,7 +4,7 @@ git+https://github.com/streamlit/gsheets-connection
 numpy==1.26.4
 st-annotated-text
 pandas
-streamlit_pandas
+#streamlit_pandas
 matplotlib
 seaborn
 plotly
