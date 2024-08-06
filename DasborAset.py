@@ -120,7 +120,7 @@ fig_top_spenders_bar.update_layout(
 
 col = st.columns((4, 4, 4), gap='small')
 with col[0]:
-    st.plotly_chart(df_top_values_view, theme="streamlit", use_container_width=True)
+    st.plotly_chart(fig_top_values_view)
 with col[1]:
     st.plotly_chart(fig_top_performers_bar)
 with col[2]:
