@@ -53,7 +53,7 @@ left_column, middle_column, right_column=st.columns(3)
 with left_column:
     annotated_text(":office:",("Total Gross Portfolio","","#afa"))
     st.subheader(total_porto)
-    #st.subheader(f"Rp{total_porto:,}")
+    st.subheader(f"Rp{total_porto:,}")
 with middle_column:
     annotated_text(":chart_with_upwards_trend:",("Total PNBP","","#afa"))
     st.subheader(total_PNBP)
