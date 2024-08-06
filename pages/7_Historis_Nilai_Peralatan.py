@@ -1,25 +1,31 @@
 import streamlit as st
 from streamlit_gsheets import GSheetsConnection
-#from streamlit_dynamic_filters import DynamicFilters
+
+
 
 st.set_page_config(
-    layout="wide"
+    page_title="Dasbor Penatausahaan Aset LMAN",
+    page_icon="📑",
+    layout="wide",
+    initial_sidebar_state="collapsed"
 )
 
-st.title("Historis Nilai Peralatan")
 
-#st.sidebar.success("pilih tab")
+# MAIN PAGE
+st.header(":bar_chart: Daftar Lengkap Aset Kelolaan LMAN ")
+st.markdown("Posisi per 30 Juni 2024")
+st.markdown("---")
+
 
 url = "https://docs.google.com/spreadsheets/d/1br1v4cUjKQ7KCFfHaQfWIix-vw4gtm5-wsoRDAZ9dKQ/edit?usp=sharing"
 
 
 conn = st.connection("gsheets", type=GSheetsConnection)
 
-#st.write(st.secrets['connections'])
-data = conn.read(spreadsheet=url,worksheet="209309230")
+df = conn.read(spreadsheet=url, worksheet="Menurut Kategori")
 
-#dynamic_filters = DynamicFilters(df=data, filters=['Nama Aset'])
-#with st.sidebar:
-#dynamic_filters.display_filters()
-#dynamic_filters.display_df()
-st.dataframe(data)
+st.dataframe(df)
+
+
+
+
