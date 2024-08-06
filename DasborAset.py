@@ -42,7 +42,7 @@ total_porto= int(df["Nilai Aset"].sum())
 total_PNBP = int(df["PNBP"].sum())
 total_spending = int(df_spend["Spend"].sum())
 
-col = st.columns((4, 4, 4), gap='small')
+col = st.columns((4, 4, 4), gap='medium')
 with col[0]:
     st.markdown('**:office: Total Gross Portfolio**')
     st.subheader(f"Rp{total_porto:,}")
