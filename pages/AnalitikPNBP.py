@@ -48,7 +48,8 @@ with middle_column:
     annotated_text((loc_top_average.iloc[0]['Nama Aset'],"","#afa"))
 with right_column:
     st.markdown(":heavy_check_mark: Gross Income Multiplier Tertinggi")
-    st.subheader(f"{top_gim:,.4f} x")
+    #st.subheader(f"{top_gim:,.4f} x")
+    st.write(top_gim)
     annotated_text((loc_top_gim.iloc[0]['Nama Aset'],"","#afa"))
 
 st.markdown("---")
