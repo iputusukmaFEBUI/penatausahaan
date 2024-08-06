@@ -34,7 +34,7 @@ top_revenue= int(df2["Total PNBP"].max())
 loc_top_revenue = df2.loc[df2['Total PNBP']==top_revenue]
 top_average = int(df2["Rerata Tahunan PNBP"].max())
 loc_top_average = df2.loc[df2['Rerata Tahunan PNBP']==top_average]
-top_gim = df2["Gross Income Multiplier"].max()
+top_gim = float(df2["Gross Income Multiplier"].max())
 loc_top_gim = df2.loc[df2['Gross Income Multiplier']==top_gim]
 
 left_column, middle_column, right_column=st.columns(3)
