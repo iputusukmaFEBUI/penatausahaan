@@ -40,19 +40,19 @@ cari_nama = st.selectbox(
 
 st.markdown("##")
 
-df_tanah = conn.read(spreadsheet=url, worksheet="udasbor Tanah")
+df_tanah = conn.read(spreadsheet=url, worksheet="319942521")
 df_tanah = df_tanah.query(
     "`Nama Aset` == @cari_nama"
 )
-df_bangunan = conn.read(spreadsheet=url, worksheet="udasbor Bangunan")
+df_bangunan = conn.read(spreadsheet=url, worksheet="1078606570")
 df_bangunan = df_bangunan.query(
     "`Nama Aset` == @cari_nama"
 )
-df_peralatan = conn.read(spreadsheet=url, worksheet="udasbor Peralatan")
+df_peralatan = conn.read(spreadsheet=url, worksheet="830824723")
 df_peralatan = df_peralatan.query(
     "`Nama Aset` == @cari_nama"
 )
-df_kdp = conn.read(spreadsheet=url, worksheet="udasbor KDP")
+df_kdp = conn.read(spreadsheet=url, worksheet="1183765865")
 df_kdp = df_kdp.query(
     "`Nama Aset` == @cari_nama"
 )
