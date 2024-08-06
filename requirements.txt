@@ -2,3 +2,4 @@ streamlit==1.31
 git+https://github.com/streamlit/gsheets-connection
 #git+https://github.com/arsentievalex/streamlit-dynamic-filters
 numpy==1.26.4
+st-annotated-text
