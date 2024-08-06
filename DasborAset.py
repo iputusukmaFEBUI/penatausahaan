@@ -76,7 +76,8 @@ fig_top_values_bar =px.bar(
 fig_top_values_bar.update_layout(
     plot_bgcolor="rgba(0,0,0,0)",
     xaxis=(dict(showgrid=False)),
-    plt.axis('off')
+    yaxis_title=None,
+    xaxis_title=None,
 )
 
 
@@ -95,7 +96,8 @@ fig_top_performers_bar =px.bar(
 fig_top_performers_bar.update_layout(
     plot_bgcolor="rgba(0,0,0,0)",
     xaxis=(dict(showgrid=False)),
-    plt.axis('off')
+    yaxis_title=None,
+    xaxis_title=None,
 )
 
 
@@ -116,7 +118,8 @@ fig_top_spenders_bar =px.bar(
 fig_top_spenders_bar.update_layout(
     plot_bgcolor="rgba(0,0,0,0)",
     xaxis=(dict(showgrid=False)),
-    plt.axis('off')
+    yaxis_title=None,
+    xaxis_title=None,
 )
 
 
