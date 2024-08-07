@@ -27,7 +27,7 @@ df = conn.read(spreadsheet=url, worksheet="1480371802")
 # TOP METRICS
 nilai_aset= int(df["Nilai Aset"].sum())
 ak_penyusutan = int(df["Ak. Penyusutan"].sum())
-nilai_bersih = int(df_spend["Spend"].sum())
+nilai_bersih = int(df["Nilai Bersih"].sum())
 
 col = st.columns((4, 4, 4), gap='medium')
 with col[0]:
