@@ -73,7 +73,7 @@ st.dataframe(df2,
         ),
         "Nilai Aset":st.column_config.NumberColumn(
             "Nilai Aset",
-            format="%,.f"
+            format="%.f"
         ),        
         "Gross Income Multiplier":st.column_config.NumberColumn(
             "Gross Income Multiplier",
