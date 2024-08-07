@@ -27,17 +27,17 @@ df = conn.read(spreadsheet=url, worksheet="1480371802")
 # TOP METRICS
 nilai_aset= int(df["Nilai Aset"].sum())
 ak_penyusutan = int(df["Ak. Penyusutan"].sum())
-nilai_bersih = int(df["Nilai Bersih"].sum())
+nilai_bersih = int(df["Nilai Bersih Aset"].sum())
 
 col = st.columns((4, 4, 4), gap='medium')
 with col[0]:
     st.markdown('**:chart_with_upwards_trend: Nilai Aset**')
     st.subheader(f"Rp{nilai_aset:,}")
 with col[1]:
-    st.markdown('**:clipboard: Total PNBP**')
+    st.markdown('**:clipboard: Akumulasi Penyusutan**')
     st.subheader(f"Rp{ak_penyusutan:,}")
 with col[2]:
-    st.markdown('**:pushpinn: Total Spending**')
+    st.markdown('**:pushpinn: Nilai Bersih Aset**')
     st.subheader(f"Rp{nilai_bersih:,}")
 
 st.markdown("---")
