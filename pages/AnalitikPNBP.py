@@ -30,6 +30,7 @@ url = "https://docs.google.com/spreadsheets/d/1br1v4cUjKQ7KCFfHaQfWIix-vw4gtm5-w
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 df2 = conn.read(spreadsheet=url, worksheet="1928701477")
+df2["Nilai Aset"] = df2["Nilai Aset"].astype(float)
 df2["Gross Income Multiplier"] = df2["Gross Income Multiplier"].astype(float)
 
 # TOP METRICS
@@ -70,6 +71,10 @@ st.dataframe(df2,
             "Holding Period",
             format="%.1f tahun"
         ),
+        "Nilai Aset":st.column_config.NumberColumn(
+            Nilai Aset",
+            format="%.4f x"
+        ),        
         "Gross Income Multiplier":st.column_config.NumberColumn(
             "Gross Income Multiplier",
             format="%.4f x"
