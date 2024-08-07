@@ -5,7 +5,7 @@ import plotly.express as px
 from streamlit_gsheets import GSheetsConnection
 from annotated_text import annotated_text
 
-
+st.sidebar.title("Penatausahaan Aset LMAN")
 st.set_page_config(
     page_title="Dasbor Penatausahaan Aset LMAN",
     page_icon="📑",
