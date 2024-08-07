@@ -53,7 +53,7 @@ with col[1]:
 st.markdown("##")
 
 
-st.dataframe(df_view_kawasan,
+st.dataframe(df_view_properti,
     column_order=("Kodefikasi Aset","Uraian Kodefikasi","Luas/Jumlah","Satuan","Nilai","Ak. Penyusutan","Depreciated"),
     hide_index=True,
     width=None,
