@@ -41,16 +41,16 @@ left_column, middle_column, right_column=st.columns(3)
 with left_column:
     st.markdown(":chart_with_upwards_trend: Total PNBP Tertinggi")
     st.subheader(f"Rp{top_revenue:,}")
-    annotated_text((loc_top_revenue.iloc[0]['Nama Aset'],"","#afa"))
+    annotated_text((loc_top_revenue.iloc[0]['Nama Aset'],"","#faa"))
 with middle_column:
     st.markdown(":pushpin: Rerata Tahunan Tertinggi")
     st.subheader(f"Rp{top_average:,}")
-    annotated_text((loc_top_average.iloc[0]['Nama Aset'],"","#afa"))
+    annotated_text((loc_top_average.iloc[0]['Nama Aset'],"","#faa"))
 with right_column:
     st.markdown(":heavy_check_mark: Gross Income Multiplier Tertinggi")
     #st.subheader(f"{top_gim:,.4f} x")
     st.write(top_gim)
-    annotated_text((loc_top_gim.iloc[0]['Nama Aset'],"","#afa"))
+    annotated_text((loc_top_gim.iloc[0]['Nama Aset'],"","#faa"))
 
 st.markdown("---")
 
