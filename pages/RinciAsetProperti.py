@@ -27,7 +27,14 @@ df = conn.read(spreadsheet=url, worksheet="1480371802")
 
 df_properti = conn.read(spreadsheet=url, worksheet="893621252")
 
-df_view_properti = df_kawasan.query(
+cari_properti = st.selectbox(
+    "Nama aset yang akan dilihat datanya",
+    options=df["Nama Aset"].unique(),
+    index=244,
+)
+
+
+df_view_properti = df_properti.query(
     "`Nama Aset` == @cari_properti"
 )
 
