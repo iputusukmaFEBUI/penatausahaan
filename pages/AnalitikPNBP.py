@@ -30,7 +30,7 @@ url = "https://docs.google.com/spreadsheets/d/1br1v4cUjKQ7KCFfHaQfWIix-vw4gtm5-w
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 df2 = conn.read(spreadsheet=url, worksheet="1928701477")
-df2["Nilai Aset"] = df2["Nilai Aset"].astype(float)
+df2["Nilai Aset"] = df2["Nilai Aset"].astype(double)
 df2["Gross Income Multiplier"] = df2["Gross Income Multiplier"].astype(float)
 
 # TOP METRICS
