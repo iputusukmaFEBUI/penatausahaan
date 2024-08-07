@@ -75,6 +75,10 @@ st.dataframe(df2,
             "Gross Income Multiplier",
             format="%.4f x"
         ),
+        "Nilai Aset":st.column_config.NumberColumn(
+            "Nilai Aset",
+            format=":,"
+        ),
         "Time Series": st.column_config.LineChartColumn(
             "Time Series PNBP",
             help="Time series PNBP 2016 s.d. semester I 2024",
