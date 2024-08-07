@@ -77,7 +77,7 @@ st.dataframe(df2,
         ),
         "Nilai Aset":st.column_config.NumberColumn(
             "Nilai Aset",
-            format="%,"
+            format="%.f"
         ),
         "Time Series": st.column_config.LineChartColumn(
             "Time Series PNBP",
