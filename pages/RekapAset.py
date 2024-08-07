@@ -37,7 +37,7 @@ with col[1]:
     st.markdown('**:clipboard: Akumulasi Penyusutan**')
     st.subheader(f"Rp{ak_penyusutan:,}")
 with col[2]:
-    st.markdown('**:pushpinn: Nilai Bersih Aset**')
+    st.markdown('**:pushpin: Nilai Bersih Aset**')
     st.subheader(f"Rp{nilai_bersih:,}")
 
 st.markdown("---")
