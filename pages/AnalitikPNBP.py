@@ -72,8 +72,8 @@ st.dataframe(df2,
             format="%.1f tahun"
         ),
         "Nilai Aset":st.column_config.NumberColumn(
-            Nilai Aset",
-            format="%.4f x"
+            "Nilai Aset",
+            format="%,.f"
         ),        
         "Gross Income Multiplier":st.column_config.NumberColumn(
             "Gross Income Multiplier",
