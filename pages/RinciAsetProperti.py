@@ -12,6 +12,9 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+st.sidebar.header("Penatausahaan Aset LMAN")
+st.sidebar.write("Divisi Anggaran dan Akuntansi @2024")
+
 # MAIN PAGE
 st.header(":bar_chart: Rincian Aset Properti Non-Kawasan")
 st.markdown("##")
