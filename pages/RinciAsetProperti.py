@@ -25,7 +25,7 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 
 
 
-df = conn.read(spreadsheet=url, worksheet="Menurut Kategori")
+df = conn.read(spreadsheet=url, worksheet="1480371802")
 
 cari_nama = st.selectbox(
     "Nama aset yang akan dilihat datanya",
