@@ -70,11 +70,7 @@ st.dataframe(df2,
         "Holding Period":st.column_config.NumberColumn(
             "Holding Period",
             format="%.1f tahun"
-        ),
-        "Nilai Aset":st.column_config.NumberColumn(
-            "Nilai Aset",
-            format="%.f"
-        ),        
+        ),   
         "Gross Income Multiplier":st.column_config.NumberColumn(
             "Gross Income Multiplier",
             format="%.4f x"
