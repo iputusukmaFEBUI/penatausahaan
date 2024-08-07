@@ -13,6 +13,7 @@ st.set_page_config(
 )
 
 st.sidebar.header("Penatausahaan Aset LMAN")
+st.sidebar.subheader("Divisi Anggaran dan Akuntansi @2024")
 
 #load data
 
