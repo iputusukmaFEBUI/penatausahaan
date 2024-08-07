@@ -138,7 +138,7 @@ st.markdown("---")
 
 col = st.columns((4, 4, 4), gap='small')
 with col[0]:
-    st.markdown('**:office: Tabel Gross Portfolio per AsetP**')
+    st.markdown('**:office: Tabel Gross Portfolio per Aset**')
     st.dataframe(df_top_values_view,
                  column_order=("Nama Aset","Nilai Aset"),
                  hide_index=True,
@@ -147,7 +147,7 @@ with col[0]:
 
 
 with col[1]:
-    st.markdown('**:chart_with_upwards_trend: Tabel PNBP per AsetP**')
+    st.markdown('**:chart_with_upwards_trend: Tabel PNBP per Aset**')
     st.dataframe(df_top_performers_view,
                  column_order=("Nama Aset","PNBP"),
                  hide_index=True,
@@ -155,7 +155,7 @@ with col[1]:
                  )
 
 with col[2]:
-    st.markdown('**:building_construction: Tabel Spending per AsetP**')
+    st.markdown('**:building_construction: Tabel Spending per Aset**')
     st.dataframe(df_top_spenders_view,
                  column_order=("Nama Aset","Spend"),
                  hide_index=True,
