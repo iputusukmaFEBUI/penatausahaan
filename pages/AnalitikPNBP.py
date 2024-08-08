@@ -75,7 +75,7 @@ st.dataframe(df2,
             "Gross Income Multiplier",
             format="%.4f %%"
         ),
-        "Time Series": st.column_config.LineChartColumn(
+        "Time Series 2016 - Jun 2024": st.column_config.LineChartColumn(
             "Time Series 2016 - Jun 2024",
             help="Time series PNBP 2016 s.d. semester I 2024",
     )}
