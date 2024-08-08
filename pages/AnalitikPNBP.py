@@ -52,7 +52,7 @@ with middle_column:
     annotated_text((loc_top_average.iloc[0]['Nama Aset'],"","#faa"))
 with right_column:
     st.markdown(":heavy_check_mark: Gross Income Multiplier Tertinggi")
-    st.subheader(f"{top_gim:,.4f} %")
+    st.subheader(f"{top_gim:,.4f} %%")
     #st.write(top_gim)
     annotated_text((loc_top_gim.iloc[0]['Nama Aset'],"","#faa"))
 
@@ -73,7 +73,7 @@ st.dataframe(df2,
         ),   
         "Gross Income Multiplier":st.column_config.NumberColumn(
             "Gross Income Multiplier",
-            format="%.4f %"
+            format="%.4f %%"
         ),
         "Time Series": st.column_config.LineChartColumn(
             "Time Series PNBP",
