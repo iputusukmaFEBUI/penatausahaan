@@ -25,4 +25,5 @@ st.markdown("Data dan informasi yang disajikan pada dasbor ini merupakan data hi
 st.markdown("**Halaman Top Figure** menyajikan total nilai aset, total PNBP dan total spending (_capital expenditure_ dan _operating expenditure_) dan visualisasi atas top-10 atas indikator tersebut. Dasbor ini belum menyajikan informasi yang bersifat _forward-looking_. ")
 st.markdown("**Halaman Analitik PNBP** menyajikan total PNBP, rerata PNBP tahunan sepanjang _holding period_, dan _gross income multiplier_ yang merupakan perbandingan antara rerata PNBP tahunan dengan nilai aset sebelum akumulasi penyusutan. Halaman ini juga menyajikan visualisasi atas time-series PNBP dari tahun 2016 s.d. 30 Juni 2024.")
 st.markdown("**Halaman Rekap Aset** menyajikan kompilasi data nilai aset, akumulasi penyusutan, PNBP, _capital expenditure_, dan _operating expenditure_ untuk tiap-tiap aset. **Halaman Rincian Aset Kawasan** menyajikan daftar aset per klasifikasi untuk aset-aset kawasan seperti kilang LNG, lapangan golf, dan kawasan komersial sementara **Halaman Rincian Aset Properti** menyajikan daftar aset menurut klasifikasi pada kelompok properti umum non-kawasan.")
-st.markdown("##")
+st.markdown("---")
+st.write("Divisi Anggaran dan Akuntansi -- Direktorat Keuangan dan Dukungan Organisasi")
