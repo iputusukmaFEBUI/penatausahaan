@@ -20,5 +20,15 @@ st.sidebar.write("Divisi Anggaran dan Akuntansi @2024")
 
 # MAIN PAGE
 st.header(":bar_chart: Dasbor Penatausahaan Aset Kelolaan")
-st.markdown("Dasbor ini menyajikan informasi penatausahaan aset kelolaan LMAN. yang diadministrasikan oleh unit akuntansi dan pelaporan. Penatausahaan aset kelolaan LMAN dilaksanakan dengan mengacu pada PMK Nomor 144/PMK.06/2020 dan Peraturan Direktur Utama LMAN Nomor 6/LMAN/2021. Nilai aset dan akumulasi penyusutan merupakan posisi per 30 Juni 2024 sebelum akumulasi penyusutan. Total PNBP dan total spending merupakan akumulasi sejak tahun 2016 s.d. 30 Juni 2024. Gross portfolio menunjukkan posisi kelolaan LMAN sebelum akumulasi penyusutan.")
+st.markdown("Dasbor ini merupakan dasbor yang menyajikan data dan informasi aset kelolaan LMAN yang disajikan dengan mengacu pada PMK Nomor 144/PMK.06/2020 tentang Pengelolaan Barang Milik Negara oleh Badan Layanan Umum Lembaga Manajemen Aset Negara dan Peraturan Direktur Utama Nomor 6/LMAN/2021 tentang Petunjuk Teknis Penatausahaan Aset Kelolaan Badan Layanan Umum Lembaga Manajemen Aset Negara.
+
+Data dan informasi yang disajikan pada dasbor ini merupakan data historis yang bersifat kuantitatif dan pendekatan yang digunakan dalam penyajiannya adalah analisis deskriptif. Data dan informasi yang disajikan pada dasbor ini hanya merupakan sebagian kecil alat pendukung pengambilan keputusan manajerial terkait aset kelolaan. Dasbor ini belum menyajikan informasi yang bersifat forward-looking.
+
+Halaman Dasbor Aset menyajikan total nilai aset, total PNBP dan total spending (capital expenditure dan operating expenditure) dan visualisasi atas top-10 atas indikator tersebut.
+
+Halaman Analitik PNBP menyajikan total PNBP, rerata PNBP tahunan sepanjang holding period, dan gross income multiplier yang merupakan perbandingan antara rerata PNBP tahunan dengan nilai aset sebelum akumulasi penyusutan. Halaman ini juga menyajikan visualisasi atas time-series PNBP dari tahun 2016 s.d. 30 Juni 2024.
+
+Halaman Rekap Aset menyajikan kompilasi data nilai aset, akumulasi penyusutan, PNBP, capital expenditure, dan operating expenditure untuk tiap-tiap aset.
+
+Halaman Rincian Aset Kawasan menyajikan daftar aset per klasifikasi untuk aset-aset kawasan seperti kilang LNG, lapangan golf, dan kawasan komersial sementara Rincian Aset Properti menyajikan daftar aset menurut klasifikasi pada kelompok properti umum non-kawasan..")
 st.markdown("##")
