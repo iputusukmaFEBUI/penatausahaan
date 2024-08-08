@@ -18,8 +18,8 @@ st.sidebar.header("Penatausahaan Aset LMAN")
 st.sidebar.write("Divisi Anggaran dan Akuntansi @2024")
 
 # MAIN PAGE
-st.header(":bar_chart: Analisis Profitabilitas -- Gross Income Multiplier")
-st.markdown("Penggunaan Gross Income Multiplier sebagai ukuran profitabilitas aset.")
+st.header(":bar_chart: Analisis Rentabilitas -- Gross Income Multiplier")
+st.markdown("Penggunaan Gross Income Multiplier sebagai ukuran rentabilitas aset. Pengukuran Gross Income Multiplier dilakukan dengan membagi rerata PNBP tahunan dengan nilai aset. Rerata PNBP tahunan dilakukan dengan membagi total PNBP dengan holding period. Holding period merupakan periode tahun sejak aset diserahkan ke LMAN hingga 30 Juni 2024.")
 st.markdown("##")
 
 #load data
@@ -59,7 +59,7 @@ with right_column:
 st.markdown("---")
 
 st.dataframe(df2,
-    column_order=("Nama Aset","Tahun Perolehan","Holding Period","Total PNBP","Rerata Tahunan PNBP","Nilai Aset","Gross Income Multiplier","Time Series"),
+    column_order=("Nama Aset","Tahun Perolehan","Holding Period","Total PNBP","Rerata Tahunan PNBP","Nilai Aset","Gross Income Multiplier","Time Series 2016 - Jun 2024"),
     hide_index=True,
     width=None,
     column_config={
