@@ -24,7 +24,7 @@ st.markdown("Dasbor ini merupakan dasbor yang menyajikan data dan informasi aset
 
 Data dan informasi yang disajikan pada dasbor ini merupakan data historis yang bersifat kuantitatif dan pendekatan yang digunakan dalam penyajiannya adalah analisis deskriptif. Data dan informasi yang disajikan pada dasbor ini hanya merupakan sebagian kecil alat pendukung pengambilan keputusan manajerial terkait aset kelolaan. Dasbor ini belum menyajikan informasi yang bersifat forward-looking.
 
-Halaman Dasbor Aset menyajikan total nilai aset, total PNBP dan total spending (capital expenditure dan operating expenditure) dan visualisasi atas top-10 atas indikator tersebut.
+Halaman Top Figure menyajikan total nilai aset, total PNBP dan total spending (capital expenditure dan operating expenditure) dan visualisasi atas top-10 atas indikator tersebut.
 
 Halaman Analitik PNBP menyajikan total PNBP, rerata PNBP tahunan sepanjang holding period, dan gross income multiplier yang merupakan perbandingan antara rerata PNBP tahunan dengan nilai aset sebelum akumulasi penyusutan. Halaman ini juga menyajikan visualisasi atas time-series PNBP dari tahun 2016 s.d. 30 Juni 2024.
 
